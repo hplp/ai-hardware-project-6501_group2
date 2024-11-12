@@ -21,7 +21,6 @@ In our project, we propose implementing on-device training of machine learning m
 2. Adaptation of FL techniques to leverage multiple MCUs in training
 3. Observe sources of greatest resource usage (SRAM, Flash, Compute)
 4. Optimize technique to leverage the fewest possible resources
-5. Extrapolate findings for consideration of adopting techniques to more limited MCUs and beyond
 
 ## Technology Stack
 1. Algorithms: Federated Learning (Approach adapted from reference papers)
@@ -30,7 +29,7 @@ In our project, we propose implementing on-device training of machine learning m
 4. VLSI: Arduino Nano 33/STM32 Microcontrollers (Choice pending availability)
 
 ## Expected Outcomes
-
+Implementation demo of federated learning for edge AI to showcase working prototype for inference application (TBD), and Extrapolate findings for consideration of adopting techniques to more limited MCUs and beyond.
 
 ## Timeline
 (Done): Literature Review of Resource-Constrained FL
