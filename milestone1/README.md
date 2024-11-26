@@ -9,7 +9,7 @@ Arduino nano 33 BLE x3 for Federated Learning
 ## Program your hardware
 
 ## Run the first iterations to test the computation module in your system.
-After the program in arduino nano BLE 33, we have tried to run the first iteration. We could confirm the hardware is properly setup until the voice recognition. We will try the voice with 
+After the program in arduino nano BLE 33, we have tried to run the first iteration. We could confirm the hardware is properly setup until the voice recognition. We will try speaking the voice to the microphone embedded with arduino so that the program can train the model on the edge. 
 ![Screenshot 2024-11-26 103836](https://github.com/user-attachments/assets/6c069bf4-f8f3-4c7f-b42d-5ad64f16ebd1)
 
 
