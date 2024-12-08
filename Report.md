@@ -41,6 +41,16 @@ In our project, we propose implementing on-device training of machine learning m
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/AIHardwareFLDemo-ezgif.com-optimize.gif)
 
 ## Results
+In our project, we experimented two defferent cases; 
+1. Federated learning in single device
+   a. Single word training
+   b. Two word training
+   c. Three word training
+2. Federated learning in two devices. The host computer perform federated
+   a. Single word training
+   b. Two word training
+   c. Three word training
+
 ### Single Device
 
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Results_Sing.jpg)
