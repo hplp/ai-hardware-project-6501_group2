@@ -23,6 +23,8 @@ In our project, we propose implementing on-device training of machine learning m
 4. Optimize technique to leverage the fewest possible resources
 
 ## Literature Review
+![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Literature_Survey.jpg)
+
 
 ## Technology Stack
 1. Algorithms: Federated Learning (Approach adapted from reference [1])
