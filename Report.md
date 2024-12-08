@@ -38,7 +38,7 @@ In our project, we propose implementing on-device training of machine learning m
 
 ## Demo
 
-![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/AIHardwareFLDemo.mp4)
+![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/AIHardwareFLDemo-ezgif.com-optimize.gif)
 
 ## Results
 ### Single Device
