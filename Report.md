@@ -42,9 +42,9 @@ In our project, we propose implementing on-device training of machine learning m
 
 ## Results
 In our project, we experimented two defferent cases; 
-1. Federated learning in single device
-   a. Single word training
-   b. Two word training
+1. Federated learning in single device<br>
+   a. Single word training<br>
+   b. Two word training<br>
    c. Three word training
 2. Federated learning in two devices. The host computer perform federated
    a. Single word training
