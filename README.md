@@ -36,4 +36,7 @@ Implementation demo of federated learning for edge AI to showcase working protot
 11/20/24: Finalize target application, and neural network model, and prepare for hardware implementation.
 11/27/24: Iterate on implementations, and focus on getting the demo for targeted application working.
 
+## Report
+For More detailed report, see Report.md
+
 
