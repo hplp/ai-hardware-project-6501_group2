@@ -43,21 +43,29 @@ In our project, we propose implementing on-device training of machine learning m
 ## Results
 In our project, we experimented two defferent cases; 
 1. Federated learning in single device<br>
-   a. Single word training<br>
-   b. Two word training<br>
-   c. Three word training
+   Case1: Single word training<br>
+   Case2: Two word training<br>
+   Case3: Three word training
 2. Federated learning in two devices. The host computer perform federated
-   a. Single word training
-   b. Two word training
-   c. Three word training
+   Case1: Single word training<br>
+   Case2: Two word training<br>
+   Case3: Three word training
 
 ### Single Device
 
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Results_Sing.jpg)
 
+
+The three plots showed the results of the loss and the number of epoch in each case using the single device.<br>
+As we demonstrated the operation in the demo, the case in single device with one-word training successfully got the loss wnought to be small after 10 times training. However, when we trained the multiple words in the same device, the loss were not properly saturated near zero. To improve these, we guess setting proper learning rate is important. The defualt learning rate in the reference model [1] is 0.3 and this value is high as they pointed out. This can lead to unstable training process.
+
 ### Multi-Device
 
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Results_Double.jpg)
+
+We expanded our testing to the multi-device training where each device performs their own federated learning. After the local learning, the host comouter gathers the local models and merges the models by federated average learning. After the average learning, the host computer redistribute the update models into local machines.
+
+Even using multiple devices, we could confirmed the successful operation with single word training. However, we still need more investigation for mupltiple keyword recoginition due to the parameter optimization for this application.
 
 ## Discussion and Future Work
 
@@ -77,4 +85,8 @@ Based on these limitations, future work may include:
 - Refining the training process to improve performance with more keywords
 - Improving the process of model aggregation from the various FL nodes to achieve improved performance with multiple devices
 
-
+## References
+[1] Marc Monfort Grau, Roger Pueyo Centelles, and Felix Freitag. 2021. On-Device Training of Machine Learning Models on Microcontrollers With a Look at Federated Learning. In Proceedings of the Conference on Information Technology for Social Good (GoodIT '21). Association for Computing Machinery, New York, NY, USA, 198–203. https://doi.org/10.1145/3462203.3475896<br>
+[2] L. Wulfert, C. Wiede and A. Grabmaier, "TinyFL: On-Device Training, Communication and Aggregation on a Microcontroller For Federated Learning," 2023 21st IEEE Interregional NEWCAS Conference (NEWCAS), Edinburgh, United Kingdom, 2023, pp. 1-5, doi: 10.1109/NEWCAS57931.2023.10198040.<br>
+[3] K. Kopparapu, E. Lin, J. G. Breslin and B. Sudharsan, "TinyFedTL: Federated Transfer Learning on Ubiquitous Tiny IoT Devices," 2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops), Pisa, Italy, 2022, pp. 79-81, doi: 10.1109/PerComWorkshops53856.2022.9767250. <br>
+[4] M. Ficco, A. Guerriero, E. Milite, F. Palmieri, R. Pietrantuono, S. Russo, Federated learning for IoT devices: Enhancing TinyML with on-board training, Information Fusion, Volume 104, 2024,102189, ISSN 1566-2535, https://doi.org/10.1016/j.inffus.2023.102189. <br>
