@@ -52,6 +52,19 @@ In our project, we propose implementing on-device training of machine learning m
 ## Discussion and Future Work
 
 
+In this work, we have achieved:​
 
+- a Federated Learning proof of concept using low resource micronctrollers
+- Keyword spotting in FL edge system with up to 3 keywords
+
+Limitations include:
+
+- Increase in number of keywords leads to increasing value of loss converged to (worse performance with more keywords)
+- Increase in number of devices degrades convergence of loss function during training phase
+
+Based on these limitations, future work may include:
+
+- Refining the training process to improve performance with more keywords
+- Improving the process of model aggregation from the various FL nodes to achieve improved performance with multiple devices
 
 
