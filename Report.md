@@ -35,6 +35,7 @@ In our project, we propose implementing on-device training of machine learning m
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Platform.jpg)
 
 ## Application Development
+This section outlines the creation of a keyword spotting application designed to study model training on a microcontroller. The application allows users to select and train the model to recognize up to three distinct keywords. Once the model is trained, users can switch to an inference mode to test the keyword detection functionality. At present, the application indicates the detected keyword by illuminating the corresponding color on the Arduino board's RGB LED.
 
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Application_Development.jpg)
 
