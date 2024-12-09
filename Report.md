@@ -37,6 +37,16 @@ In our project, we propose implementing on-device training of machine learning m
 ## Application Development
 This section outlines the creation of a keyword spotting application designed to study model training on a microcontroller. The application allows users to select and train the model to recognize up to three distinct keywords. Once the model is trained, users can switch to an inference mode to test the keyword detection functionality. At present, the application indicates the detected keyword by illuminating the corresponding color on the Arduino board's RGB LED.
 
+1. Hardware Setup
+The application runs on an Arduino Nano 33 BLE Sense board, which includes many essential components. The board features a built-in microphone for recording keywords, as well as an integrated white LED and an RGB LED. The white LED indicates the application stage (e.g., IDLE, busy), while the RGB LED displays the output class of the keyword spotting model. For training the model with three keywords, three buttons are connected to the board’s digital inputs, each corresponding to one keyword. A fourth button is added for testing the model through inference.
+
+2. Workflow
+The application is activated either by flashing the program onto the Arduino board or restarting the board with the program pre-installed. When powered on, a new model is initialized, with its weights and biases set to random values. Users can then train the model by pressing one of three dedicated training buttons, each linked to a specific keyword. Pressing a button causes the RGB LED to light up in a color representing that button (red, green, or blue). After releasing the button, the Arduino's built-in microphone records one second of audio, during which the user should speak the desired keyword. The captured audio is processed into a feature vector, and the model is trained using this vector, with the button press determining the label for the keyword. A fourth button is available for testing the model. This button follows the same process as the training buttons but instead performs inference. Upon recognizing a keyword, the RGB LED lights up in the color corresponding to the detected word.
+
+3. Neural Network Model and Training
+
+4. Software Implementation
+
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Application_Development.jpg)
 
 ## Demo
