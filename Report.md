@@ -24,6 +24,9 @@ In our project, we propose implementing on-device training of machine learning m
 4. Achieve successful ML classification leveraging multiple devices in an FL configuration
 
 ## Literature Review
+We performed literature survey with the goal of finding existing implementations that can help us guide towards decision of selecting application as well as hardware platform. This also helped us identify the key metrics in our application and existing tradeoffs. As can be seen from the plot below, the time to train increases as the RAM capacity per edge node decreases.
+
+Based on literature survey results, we chose the application of keyword spotting to be implemented on Arduino Nano 33 BLE Sense board.
 ![alt text](https://github.com/hplp/ai-hardware-project-6501_group2/blob/main/Literature_Survey.jpg)
 
 
