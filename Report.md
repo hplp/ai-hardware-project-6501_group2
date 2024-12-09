@@ -12,6 +12,8 @@
 Federated Learning for Edge AI
 
 ## Project Description
+We all are aware of traditional machine learning where data is collected from several edge devices and the model is trained on this aggregated data. However, this approach requires powerful servers and are not practical for tinyML applications where compute operations are increasingly moving from cloud to the network edge. Here, we want to explore about one such approach which is called Federated Learning. This is a decentralized form of machine learning where models are sent to individual devices where local models are trained with local datasets and then merged into a global model. This is useful particularly in resource constrained edge devices where neural networks are implemented in distributed manner.
+
 Federated learning has gained significant interest within the research community by enabling machine learning model training on distributed devices without requiring local data sharing. Instead of relying on a centralized dataset to train a single model, federated learning involves training separate models on local datasets and combining them into a unified global model. Although each device operates with a limited dataset, the overall capacity of the global model compensates for this limitation. Federated learning also addresses privacy concerns, making it feasible to train models on sensitive data, like medical records, without transferring them to the cloud.
 
 In our project, we propose implementing on-device training of machine learning models on a microcontroller using federated learning. To overcome the resource constraints on the microcontroller, we implement federated learning across multiple devices to aggregate overall training before the inference stage.
