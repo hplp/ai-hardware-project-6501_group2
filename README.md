@@ -39,4 +39,7 @@ Implementation demo of federated learning for edge AI to showcase working protot
 ## Report
 For More detailed report, see Report.md
 
+## Project Files
+The project files are under the milestone1 section, under the name of TinyML-FederatedLearning-main (2).zip
+
 
