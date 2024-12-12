@@ -16,7 +16,7 @@ We all are aware of traditional machine learning where data is collected from se
 
 Federated learning has gained significant interest within the research community by enabling machine learning model training on distributed devices without requiring local data sharing. Instead of relying on a centralized dataset to train a single model, federated learning involves training separate models on local datasets and combining them into a unified global model. Although each device operates with a limited dataset, the overall capacity of the global model compensates for this limitation. Federated learning also addresses privacy concerns, making it feasible to train models on sensitive data, like medical records, without transferring them to the cloud.
 
-In our project, we propose implementing on-device training of machine learning models on a microcontroller using federated learning. To overcome the resource constraints on the microcontroller, we implement federated learning across multiple devices to aggregate overall training before the inference stage.
+In our project, we propose implementing on-device training of machine learning models on a microcontroller using federated learning [1]. To overcome the resource constraints on the microcontroller, we implement federated learning across multiple devices to aggregate overall training before the inference stage.
 
 ## Key Objectives
 1. Literature Review of Resource-Constrained FL
